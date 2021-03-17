@@ -1,0 +1,17 @@
+input{
+	margin-bottom: 3%;
+    text-align: center;
+	font-size: 1.5em!important;
+    font-weight: bold;
+	border-radius: 10px;
+}
+#txtPassword{
+	margin-top: 20%;
+}
+#btnInvia{
+	width: 20%;
+    text-align: center;
+    margin-left: 40%;
+	font-size: 2em;
+    border-radius: 10px;
+}

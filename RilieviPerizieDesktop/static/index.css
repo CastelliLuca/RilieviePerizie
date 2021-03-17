@@ -1,0 +1,78 @@
+html{
+	width: 100%;
+	height: 100%;
+}
+#txtMail{
+	float: left;
+	margin-right :50px;
+	width: 20%;
+}
+#txtUser{
+	float: left;
+	margin-right :50px;
+}
+#btnInvia{
+	float: left;
+}
+#wrapper{
+	margin-top: 5%;
+	width:100%;
+	height: 800px;
+}
+#map{
+	width:49.5%;
+	height: 700px;
+	display: block;
+	float: left;
+}
+#btnDx{
+	float: right;
+	display: block;
+	font-size: 50pt;
+	margin-left: 22px;
+	margin-top: 65px;
+}
+#btnSx{
+	float: left;
+	display: block;
+	font-size: 50pt;
+	margin-left: 22px;
+	margin-top: 65px;
+}
+#divDettagli{
+	padding-top: 20px;
+	width:49.5%;
+	height: 700px;
+	display: block;
+	float: right;
+}
+#txtNote{
+	display: inline-block;
+	width: 500px;
+	margin-top: 20px;
+}
+h2{
+	text-align: center;
+}
+h1{
+	text-align: center;
+}
+#btnSave{
+	float: left;
+    margin-left: 40%;
+	margin-right: 40%;
+    margin-top: 20px;
+	margin-bottom: 20px;
+}
+p{
+	text-align: center;
+}
+img{
+	margin:0 auto;
+	display: inline-block im !important;
+}
+#panel{
+	width:450px;
+	height: 100px;
+}
+
