@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+
+<html>
+ 
+ <head>
+	<meta charset="UTF-8">
+	<meta http-equiv="Content-Security-Policy" 
+      content="default-src *;  
+	           script-src * 'unsafe-inline'; 
+			   style-src * 'unsafe-inline'; 
+			   img-src * data: content:;"
+    > 
+	  
+	<!--meta http-equiv="Content-Security-Policy" content="
+		default-src * gap: ws: https://ssl.gstatic.com;
+		style-src   * 'unsafe-inline' 'self' data: blob:;
+		script-src  * 'unsafe-inline' 'unsafe-eval' data: blob:;
+		img-src     * data: 'unsafe-inline' 'self';"
+	-->
+			   
+	<meta name="format-detection" content="telephone=no">
+    <meta name="msapplication-tap-highlight" content="no">
+    <meta name="viewport" content="initial-scale=1, width=device-width, viewport-fit=cover"> 
+	<meta name="color-scheme" content="light dark"> 
+		
+	<link  rel="stylesheet"  href="index.css" />
+	<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script src="cordova.js"> </script>
+	<script src="index.js"> </script>
+ </head>
+ 
+ 
+ <body>
+
+	<div id="header">
+		<div id="btnLogout">Logout</div>
+	</div>
+	<h2>Scatta una foto o scegli con quale eseguire l'upload
+	</h2>
+	<div id="wrapper">
+		<button id="btnScatta">Scatta</button>&nbsp;
+		<button id="btnCerca">Galleria</button>
+		<button id="btnCarica" style="display: none;">Carica sul server</button>
+		<input type="text" placeholder="Inserisci la descrizione della perizia" id="txtDescrizione">
+		<br>
+	</div>	
+ </body>
+</html>
