@@ -2,6 +2,9 @@ html{
 	width: 100%;
 	height: 100%;
 }
+body{
+	background-image: url("img/back.jpg");
+}
 #txtMail{
 	float: left;
 	margin-right :50px;
