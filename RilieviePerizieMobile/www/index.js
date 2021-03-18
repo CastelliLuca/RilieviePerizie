@@ -50,8 +50,7 @@ $(document).ready(function () {
             let div = $("<div>");
             div.prop("class","divSelection");
             _img.css({
-                "height":100,
-                "width":60
+                "height":120
             });
             if (cameraOptions.destinationType == Camera.DestinationType.DATA_URL) {
                 //base64
@@ -91,12 +90,17 @@ $(document).ready(function () {
         });
     });
     $("#btnCarica").on("click",function(){
-		let gpsOptions = {
-            enableHighAccuracy: true,
-            timeout: 5000,
-            maximumAge: 0
-        };
-        watchID=navigator.geolocation.watchPosition(onsuccess, error, gpsOptions);
+        if($("#txtDescrizione").val()=="")
+            alert("Devi inserire una descrizione");
+        else
+        {
+            let gpsOptions = {
+                enableHighAccuracy: true,
+                timeout: 5000,
+                maximumAge: 0
+            };
+            watchID=navigator.geolocation.watchPosition(success, error, gpsOptions);
+        }
 
     });
 
@@ -108,7 +112,7 @@ $(document).ready(function () {
     });
     });
 
-    function onsuccess(position) {
+    function success(position) {
         let latitude= position.coords.latitude;
         let longitude=position.coords.longitude;
 
